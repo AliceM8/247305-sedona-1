@@ -14,7 +14,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -29,8 +29,8 @@
 				<li class="reason-item">
 					<h3>Настоящий городок</h3>
 					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-					<img src="img/sedona-foto(1).jpg" width="800" height="401" alt="Вид Седоны(1)">
-					<ul class="reason-item-list">
+					<img src="img/sedona-foto(1).jpg" width="800" height="401" alt="Вид Седоны">
+					<ul class="more-reason">
 						<li>
 							<h3>Жилье</h3>
 							<p>Рекоментуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -46,9 +46,9 @@
 					</ul>
 				</li>
 				<li class="reason-item">
-					<h3>Там есть мост дьявола</h3>
+					<h3>Там есть Мост Дьявола</h3>
 					<p>По нему можно пройти! Если конечно вы осмелитесь</p>
-					<img src="img/sedona-foto(2).jpg" width="800" height="400" alt="Вид Седоны(2)">
+					<img src="img/sedona-foto(2).jpg" width="800" height="400" alt="Вид на Мост Дьявола">
 				</li>
 				<li class="reason-item">
 					<h3>Небольшая площадь</h3>
@@ -67,25 +67,25 @@
 		<section class="booking">
 			<h2>Заинтересовались?</h2>
 			<p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-			<form method="post">
-				<h2>Поиск гостиницы в Седоне</h2>
-				<label>
-					Дата заезда:
-					<input type="date" name="Date of the comin">
-				</label>
-				<label>
-					Дата выезда:
-					<input type="date" name="Date of the">
-				</label>
-				<label>
-					Взрослые:
-					<input type="number" name="Adult" step="1">
-				</label>
-				<label>
-					Дети:
-					<input type="number" name="Child" step="1">
-				</label>
-				<input type="button" name="Search" value="Найти">
+			<form class="booking-form" action="https://echo.htmlacademy.ru" method="post"> 
+				<button class="button" type="button">Поиск гостиницы в Седоне</button>
+				<p class="booking-item">
+					<label for="check-inn">Дата заезда:</label>
+					<input id="check-inn" type="text" name="check-inn date" value="" placeholder="24 апреля 2017">
+				</p>
+				<p>
+					<label for="check-out">Дата выезда:</label>
+					<input id="check-out" type="text" name="check-out date" value="" placeholder="4 июля 2017">
+				</p>
+				<p>
+					<label for="amount-of-adults">Взрослые:</label>
+					<input id="amount-of-adults" type="number" name="adults" step="1" placeholder="2">
+				</p>
+				<p>
+					<label for="amount-of-children">Дети:</label>
+					<input id="amount-of-children" type="number" name="children" step="1" placeholder="0">
+				</p>
+				<button class="button" type="submit">Найти</button>
 			</form>
 		</section> 	
     </main>
@@ -95,31 +95,15 @@
     	</p>
     	<div class="footer-social">
     		<ul>
-    			<li>
-    				<a class="social-button" href="#">
-    					<img src="img/twitter.svg" width="17" height="15" alt="Twitter">
-    				</a>
-    			</li>
-    			<li>
-    				<a class="social-button" href="#">
-    					<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
-    				</a>
-    			</li>
-    			<li>
-    				<a class="social-button" href="#">
-    					<img src="img/youtube.svg" width="20" height="16" alt="YouTube">
-    				</a>
-    			</li>
+    			<li><a class="social-button" href="#">Twitter</a></li>
+    			<li><a class="social-button" href="#">Facebook</a></li>
+    			<li><a class="social-button" href="#">YouTube</a></li>
     		</ul>
     	</div>
     	<p class="footer-copyright">
     		<b>Websyte by:</b> 
-        	<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-        		<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-        	</a>
+        	<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     	</p>
-    	
-    </footer>
-
+     </footer>
   </body>
 </html>
