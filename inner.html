@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Sedona</title>
+    <title>Hotels Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -11,9 +13,9 @@
           <img src="img/sedona-logo.png" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
+          <li><a href="sedonainfo.html">Информация</a></li>
+          <li><a href="sedonafoto.html">Фото и видео</a></li>
+          <li><a href="sedonamap.html">Карта штата</a></li>
           <li class="site-navigation-current"><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -57,10 +59,19 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (р):</legend>
-            от 0 <input type="range" name="price" min="0" max="3000" step="100">до 3000
-          </fieldset>
+          <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+          <div class="scale">
+          <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+          </div>
           <button type="submit" class="filter-button">Показать</button>
         </form>
       </section>
@@ -80,43 +91,43 @@
         <h2 class="result-title">Найдено: 3</h2>
         <ul class="result-list">
           <li class="result-item">
-            <a href="#"><h3>Amara resort & SPA</h3></a>
+            <a href="#" class="hotels-name"><h3>Amara resort & SPA</h3></a>
             <img src="img/sedona-hotel(1).jpg" width="135" height="90" alt="Фотография Гостиницы">
             <p class="result-item-info">
               Гостиница
-              <a href="#" class="more-info">Подробнее</a>
+              <a href="#" class="button more-info">Подробнее</a>
             </p>
             <p class="result-item-price">
               от 4000
-              <button type="button" class="reserve">Забронировать</button>
+              <button type="button" class="button reserve">Забронировать</button>
             </p>
             <div class="result-item-starrating">Четыре звезды</div>
             <div class="result-item-rating">Рейтинг: 8,5</div>
           </li>
           <li class="result-item">
-              <a href="#"><h3>Desert quail inn</h3> </a>
+              <a href="#" class="hotels-name"><h3>Desert quail inn</h3> </a>
               <img src="img/sedona-hotel(2).jpg" width="135" height="90" alt="Фотография Мотеля">
               <p class="result-item-info">
                 Мотель
-              <a href="#" class="more-info">Подробнее</a>
+              <a href="#" class="button more-info">Подробнее</a>
             </p>
             <p class="result-item-price">
               от 3000
-              <button type="button" class="reserve">Забронировать</button>
+              <button type="button" class="button reserve">Забронировать</button>
             </p>
             <div class="result-item-starrating">Три звезды</div>
             <div class="result-item-rating">Рейтинг: 8,9</div>
           </li>
           <li class="result-item">
-              <a href="#"><h3>Villas at poco diablo</h3></a>
+              <a href="#" class="hotels-name"><h3>Villas at poco diablo</h3></a>
               <img src="img/sedona-hotel(3).jpg" width="135" height="90" alt="Фотография Апартаментов">
             <p class="result-item-info">
               Апартаменты
-              <a href="#" class="more-info">Подробнее</a>
+              <a href="#" class="button more-info">Подробнее</a>
             </p>
             <p class="result-item-price">
               <b>от 2000</b>
-              <button type="button" class="reserve">Забронировать</button>
+              <button type="button" class="button reserve">Забронировать</button>
             </p>
             <div class="result-item-starrating">Две звезды</div>
             <div class="result-item-rating">Рейтинг: 9,2</div>
@@ -130,14 +141,14 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="sedonatwit.html">Twitter</a></li>
+          <li><a class="social-button" href="sedonafb.html">Facebook</a></li>
+          <li><a class="social-button" href="sedonayt.html">YouTube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Websyte by:</b> 
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
      </footer>
   </body>

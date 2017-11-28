@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -11,63 +13,73 @@
           <img src="img/sedona-logo.png" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
+          <li><a href="sedonainfo.html">Информация</a></li>
+          <li><a href="sedonafoto.html">Фото и видео</a></li>
+          <li><a href="sedonamap.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-    	<h1 class="page-title visually-hidden">Седона</h1>
-    	<p class="slogan">
-    		<b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-    	</p>
+    	<section class="welcome-to-sedona">
+    		<h1 class="page-title visually-hidden">Добро пожаловать в Седону</h1>
+    		<img class="sedona-intro" src="img/sedona-intro.png" width="458" height="352" alt="Добро пожаловать в Седону">	
+    	</section>
 		<section class="reason">
+			<p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!
+    		</p>
 			<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-			<ol class="reason-list">
-				<li class="reason-item">
-					<h3>Настоящий городок</h3>
+			<ul class="reason-list">
+				<li class="blue-color reason-item">
+					<h3 class="blue-color">Настоящий городок</h3>
+					<p>-№1-</p>
 					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					<img src="img/sedona-foto(1).jpg" width="800" height="401" alt="Вид Седоны">
-					<ul class="more-reason">
-						<li>
-							<h3>Жилье</h3>
-							<p>Рекоментуем пожить в настоящем мотеле, всё как в кино!</p>
-						</li>
-						<li>
-							<h3>Еда</h3>
-							<p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-						</li>
-						<li>
-							<h3>Сувениры</h3>
-							<p>Не только китайского, но и местного производства!</p>
-						</li>
-					</ul>
 				</li>
-				<li class="reason-item">
-					<h3>Там есть Мост Дьявола</h3>
-					<p>По нему можно пройти! Если конечно вы осмелитесь</p>
+				<ul class="more-reason">
+					<li>
+						<h3>Жилье</h3>
+						<p>Рекоментуем пожить в настоящем мотеле, всё как в кино!</p>
+					</li>
+					<li>
+						<h3>Еда</h3>
+						<p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+					</li>
+					<li>
+						<h3>Сувениры</h3>
+						<p>Не только китайского, но и местного производства!</p>
+					</li>
+				</ul>
+				<li class="blue-color reason-item">
+					<h3 class="blue-color">Там есть Мост Дьявола</h3>
+					<p>-№2-</p>
+					<p>Да,по нему можно пройти! Если конечно вы осмелитесь</p>
 					<img src="img/sedona-foto(2).jpg" width="800" height="400" alt="Вид на Мост Дьявола">
 				</li>
+				<div class="gray-color">
 				<li class="reason-item">
 					<h3>Небольшая площадь</h3>
+					<p>-№3-</p>
 					<p>Все достопримечательности находятся очень близко</p>
 				</li>
 				<li class="reason-item">
 					<h3>Красивая дорога</h3>
+					<p>-№4-</p>
 					<p>Ехать в Седону из Лас - Вегаса совсем не скучно!</p>	
 				</li>
 				<li class="reason-item">
 					<h3>Мало туристов</h3>
+					<p>-№5-</p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
-			</ol>
+				</div>
+			</ul>
 		</section>
 		<section class="booking">
 			<h2>Заинтересовались?</h2>
 			<p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-			<a class="booking-button" href="booking.html">Поиск гостиницы в Седоне</a>
+			<button type="button" class="button">Поиск гостиницы в Седоне</button>
+			<img src="img/sedona-map.jpg" width="1200" height="593" alt="Карта">
 		</section> 	
     </main>
     <footer class="main-footer">
@@ -76,14 +88,14 @@
     	</p>
     	<div class="footer-social">
     		<ul>
-    			<li><a class="social-button" href="#">Twitter</a></li>
-    			<li><a class="social-button" href="#">Facebook</a></li>
-    			<li><a class="social-button" href="#">YouTube</a></li>
+    			<li><a class="social-button" href="sedonatwit.html">Twitter</a></li>
+    			<li><a class="social-button" href="sedonafb.html">Facebook</a></li>
+    			<li><a class="social-button" href="sedonayt.html">YouTube</a></li>
     		</ul>
     	</div>
     	<p class="footer-copyright">
-    		<b>Websyte by:</b> 
-        	<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    		<p>Websyte by:</p> 
+        	<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     	</p>
      </footer>
      <section class="modal-booking">

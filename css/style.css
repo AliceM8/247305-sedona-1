@@ -1,0 +1,473 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 1200px;
+  background-color: #f2f2f2;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3)
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a{
+  color: #000000;
+}
+
+.site-navigation a:hover{
+  color: #81b3d2;
+}
+
+.site-navigation a:active{
+  color: #000;
+  opacity: 0.3;
+}
+
+.welcome-to-sedona{
+  background-color: #81b3d2;
+  background-image: url(../img/sedona-border.png), url(../img/sedona-background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+
+  padding: 75px 0;
+  margin-bottom: 60px;
+}
+
+.slogan{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reason-list,
+.more-reason{
+  list-style: none;
+}
+
+.reason h2{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.blue-color{
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.gray-color{
+  background-color: #eeeeee;
+}
+
+.booking h2{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.booking-info{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.button{
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.footer-visit{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.footer-social ul{
+  list-style: none;
+}
+
+.footer-copyright{
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+/*Поиск гостиницы форма*/
+
+.booking button{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  background-color: #766357;
+}
+
+.booking button:hover{
+  background-color: #604e43;
+}
+
+.booking button:active{
+  background-color: #503e33;
+  color: rgba(255,255,255,0.3)
+}
+
+.modal-booking form{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.booking-form input{
+  background-color: #f2f2f2;
+  border: medium none;
+  height: 35px;
+  width: 331px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.booking-form input:hover{
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus{
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.modal-booking button{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  background-color: #81b3d2;
+}
+
+.modal-booking button:hover{
+  background-color: #669ec0;
+}
+
+.modal-booking button:active{
+  background-color: #5496bd;
+  color: rgba(255,255,255,0.3)
+}
+
+/*Гостиницы*/
+
+.site-navigation-current a{
+  color: #766357;
+}
+
+.filters{
+  width: 100%;
+  min-height: 216px;
+  margin-bottom: 30px;
+  background-color: #8dbad6;
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.filter ul{
+  list-style: none;
+}
+
+.filter{
+  text-align: left;
+  color: #ffffff;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+legend{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+/*Сложный фильтр*/
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.filter-button{
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background: transparent;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.filter-button:hover{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sorting{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting li{
+  list-style: none;
+}
+
+.sorting h2{
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sorting-list a,
+.sorting-type a{
+  color: rgba(0,0,0,0.3);
+  border-bottom: 1px dashed rgba(129,179,210,0.3);
+}
+
+.sorting-list a:hover,
+.sorting-type a:hover{
+  color: #81b3d2;
+  border-bottom: 1px dashed rgba(129,179,210,0.3);
+}
+
+.sorting-list a:active,
+.sorting-type a:active{
+  color: #000000;
+  border-bottom: none;
+}
+
+li .active{
+  color: #81b3d2;
+}
+
+.result-title{
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.result-list{
+  list-style: none;
+}
+
+.hotels-name h3{
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hotels-name h3:hover{
+  color: #81b3d2;
+}
+
+.hotels-name h3:active{
+  color: rgba(0,0,0,0.3);
+}
+
+.more-info{
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background: #81b3d2;
+  text-align: center;
+}
+
+.more-info:hover{
+  background-color: #669ec0;
+}
+
+.more-info:active{
+  color: rgba(255,255,255,0.3); 
+  background-color: #5496bd;
+}
+
+.reserve{
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background: #766357;
+  text-align: center;
+}
+
+.reserve:hover{
+  background-color: #604e43;
+}
+
+.reserve:active{
+  color: rgba(255,255,255,0.3); 
+  background-color: #503e33;
+}
+
+
